@@ -1,6 +1,6 @@
 // background for workspace and backdrop
 spawn-sh-at-startup "awww-daemon & awww img /home/hank/Code/niri-setup/wallpapers/backdrop.jpg"
-spawn-sh-at-startup "swaybg -i /home/luiza/Imagens/Images/wp11342451-evergreen-forest-wallpapers.jpg"
+spawn-sh-at-startup "swaybg -i /home/luiza/Pictures/wallpapers/pokemon.jpg -m fill -c '#010102'"
 layer-rule {
     match namespace="^awww-daemon$"
     place-within-backdrop true

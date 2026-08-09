@@ -1,6 +1,6 @@
 binds {
     // Applications
-    Mod+T      { spawn-sh "alacritty --config-file /home/luiza/niri-setup/alacritty/default.toml"; }
+    Mod+T           { spawn-sh "alacritty"; }
     Mod+Space       { spawn-sh "rofi -show drun --config /home/luiza/niri-setup/fuzzel/fuzzel.ini"; }
     Mod+W           { spawn-sh "firefox"; }
     Mod+E           { spawn-sh "nautilus"; }
@@ -10,7 +10,7 @@ binds {
     Mod+P           { spawn-sh "/home/luiza/niri-setup/scripts/change-power-profile.sh"; }
     Mod+U           { spawn-sh "alacritty --title 'Updater' --config-file /home/luiza/niri-setup/alacritty/float.toml -e /home/luiza/niri-setup/waybar/modules/install-updates.sh"; }
     Mod+B           { spawn-sh "/home/luiza/niri-setup/scripts/toggle-waybar.sh"; }
-    //Mod+Ctrl+W      { spawn-sh "alacritty --title 'Wallpaper Selector' --config-file /home/luiza/niri-setup/alacritty/float.toml -e /home/luiza/niri-setup/scripts/change-wallpaper.sh"; }
+    Mod+Ctrl+W      { spawn-sh "alacritty --title 'Wallpaper Selector' --config-file /home/luiza/niri-setup/alacritty/float.toml -e /home/luiza/niri-setup/scripts/change-wallpaper.sh"; }
     Mod+Backspace   { spawn-sh "/home/luiza/niri-setup/scripts/wlogout.sh"; }
 
     // Backlight and Audio
