@@ -1,16 +1,17 @@
 /* Pastel TTY Colors */
-@define-color background #212121;
-@define-color background-light #3a3a3a;
-@define-color foreground #e0e0e0;
-@define-color black #5a5a5a;
-@define-color red #ff9a9e;
-@define-color green #b5e8a9;
-@define-color yellow #ffe6a7;
-@define-color blue #63a4ff;
-@define-color magenta #dda0dd;
-@define-color cyan #a3e8e8;
-@define-color white #ffffff;
-@define-color orange #ff8952;
+/* Everforest Dark Colors */
+@define-color background #2b3339;
+@define-color background-light #323c41;
+@define-color foreground #d3c6aa;
+@define-color black #3c474d;
+@define-color red #e67e80;
+@define-color green #a7c080;
+@define-color yellow #dbbc7f;
+@define-color blue #7fbbb3;
+@define-color magenta #d699b6;
+@define-color cyan #83c092;
+@define-color white #d3c6aa;
+@define-color orange #e69875;
 
 /* Module-specific colors */
 @define-color workspaces-color @foreground;
@@ -38,7 +39,7 @@
 @define-color pulseaudio-muted-color @red;
 @define-color wireplumber-color @orange;
 @define-color wireplumber-muted-color @red;
-@define-color backlight-color @yellow;
+@define-color backlight-color @white;
 @define-color disk-color @cyan;
 @define-color updates-color @orange;
 @define-color quote-color @green;
@@ -52,10 +53,10 @@
 * {
   /* Base styling for all modules */
   border: none;
-  border-radius: 0;
+  border-radius: 2;
   font-family: "JetBrainsMono Nerd Font Propo";
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: normal;
   min-height: 0;
 }
 
@@ -81,6 +82,7 @@ window#waybar {
 #power-profiles-daemon,
 #idle_inhibitor,
 #bluetooth,
+
 #custom-media
 #tray {
   padding: 0 10px;
@@ -275,6 +277,7 @@ window#waybar {
   color: @blue; /* Usando a variável de cor existente */
   border-bottom-color: @blue;
 }
+
 
 #bluetooth.disabled {
   color: @black;
